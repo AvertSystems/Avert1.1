@@ -71,7 +71,7 @@ do_action( 'storefront_loop_after' );
                                 <a class="navLinks" href="/product-category/on-sale">On Sale</a>
                                 <a class="navLinks" href="/product-tag/3stripelife">3 Stripe Life</a>
                                 <a class="navLinks" href="/cart">Cart</a>
-                                <a class="navLinks" href="/checkout">Checkout</a>
+                                <!--<a class="navLinks" href="/checkout">Checkout</a>-->
                                 <a class="navLinks" href="/account">My Account</a>
                         </div>
 
