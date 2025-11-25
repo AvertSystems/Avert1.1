@@ -1,0 +1,52 @@
+<div id="mainPanel">
+<div class="service-info" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+<span id="sysAdminDesc" class="viewDesc" style="flex-basis:200px;">View description<span id="sysAdminArrow" class="arrow" style="position:relative;left:5px;">&#9662;</span><br />
+</span><br />
+<span id="sysAdminDescHide" class="viewDesc" style="flex-basis:200px;display:none;">View description<span id="sysAdminArrow" class="arrow" style="position:relative;left:5px;">&#9652;</span><br />
+</span></p>
+<p id="sysAdminPara" class="desc" style="flex-basis:100%;align-itmes:space-around;color:black;display:none;position:relative;top:15px;">Select this service if you are looking to improve upon or create a new system from scratch. A system can be an inventory system to keep track of available products or a customer database tracking sales to identify trends and grow your business further. As the graphic shows, there are 7 steps in this process. The first step is to identify a new system to be made or ways to improve upon a system already in place. In this phase you will detail to me what problems you want to fix and what opportunities you would like to seize. From there, you will outline to me the requirements for successful completion of the project including project deliverables and any timelines you would like to keep. Once all this information is gathered, I will do an in depth analysis to determine how to implement all the requirements of the new system, creating any applicable charts and diagrams detailing how the system will be implemented with an estimated time of completion. Once the new system design is agreed upon, I will build it, along with supporting documentation of how to operate and maintain the system. Once the system is built, it must be tested to ensure it is working correctly before going into production. Finally, the system will be deployed in a production environment where it will be monitored and evaluated for further improvements.</p>
+</div>
+<form action="../requests.php" method="post" class="contact-form">
+<div id="fname-field" class="form-left form-field">
+<label class="formLabel" for="fname">First name:</label><br />
+<input id="firstName" type="text" placeholder="First Name" name="firstName" maxlength="20" required>
+<span id="first-name-message" class="message"></span>
+</div>
+<div id="lname-field" class="form-right form-field">
+<label class="formLabel" for="lname">Last name:</label><br />
+<input id="lastName" type="text" placeholder="Last Name" name="lastName" maxlength="20" required>
+<span id="last-name-message" class="message"></span>
+</div>
+<div id="email-field" class="form-left form-field">
+<label class="formLabel" for="email">Email:</label><br />
+<input id="email" type="email" placeholder="Ex: user@website.com" name="email" maxlength="30" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]+" required>
+<span id="email-message" class="message"></span>
+</div>
+<div id="phone-field" class="form-right form-field">
+<label class="formLabel" for="phone">Phone:</label><br />
+<input id="phone"  placeholder="Ex: 555-555-5555" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"/>
+<span id="phone-message" class="message"></span>
+</div>
+<div id="desc-field" class="form-full">
+<label class="formLabel" for="description">Description:</label><br />
+<textarea id="description" placeholder="Please describe your project in 500 characters or less." type="text" rows="30" name="description" maxlength="500" required></textarea>
+<span id="desc-message" class="message"></span>
+</div>
+<input style="flex-basis:185px;height:20px;margin-right:10px;display:none;" type="text" id="service" name="service" value="System Development" /><br />
+</form>
+<a id="sysadminsubmit2" onclick="request()" class="submit-button">Submit</a>
+<div id="dialog-message" style="display:none;"></div>
+</div>
+<div id="confirmPanel">
+<h3 id="lgConfirmTitle" class="lgConfirmTitle">Thanks for your request!</h3>
+<div id="confirmation" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+<p id="confirmationPara" class="desc" style="flex-basis:100%;color:black;">Review the details of your <span id="confirmService" style="color:black;"></span> request below.</p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">First Name: <span id="confirmFirst" class="confirm-value" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Last Name: <span id="confirmLast" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Email: <span id="confirmEmail" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Phone: <span id="confirmPhone" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Description: <span id="confirmDesc" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:black;">You will receive a confirmation email for your request shortly. Have a great day!</p>
+<p class="confirmationPara" style="flex-basis:100%;margin-top:10px;"><a href="/" id="backtohome" class="submit-button">Back to Home</a></p>
+</div>
+</div>

@@ -1,0 +1,52 @@
+<div id="mainPanel">
+<div class="service-info" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+<span id="sysAdminDesc" class="viewDesc" style="flex-basis:200px;">View description<span id="sysAdminArrow" class="arrow" style="position:relative;left:5px;">&#9662;</span><br />
+</span><br />
+<span id="sysAdminDescHide" class="viewDesc" style="flex-basis:200px;display:none;">View description<span id="sysAdminArrow" class="arrow" style="position:relative;left:5px;">&#9652;</span><br />
+</span></p>
+<p id="sysAdminPara" class="desc" style="flex-basis:100%;align-itmes:space-around;color:black;display:none;position:relative;top:15px;">Select this service if you require routine maintenance for your on-site or local systems. Routine tasks include software installations, configurations and updates, creating backups, scheduling tasks to run at a specific time, task automation and troubleshooting. Most of this is done with the use of custom made scripts which I write and implement on your system. These scripts can be very simple, spanning only a few lines, or quite complex with hundreds of lines of code. It all depends on your needs. Fill out the form below to get started!</p>
+</div>
+<form action="../requests.php" method="post" class="contact-form">
+<div id="fname-field" class="form-left form-field">
+<label class="formLabel" for="fname">First name:</label><br />
+<input id="firstName" type="text" placeholder="First Name" name="firstName" maxlength="20" required>
+<span id="first-name-message" class="message"></span>
+</div>
+<div id="lname-field" class="form-right form-field">
+<label class="formLabel" for="lname">Last name:</label><br />
+<input id="lastName" type="text" placeholder="Last Name" name="lastName" maxlength="20" required>
+<span id="last-name-message" class="message"></span>
+</div>
+<div id="email-field" class="form-left form-field">
+<label class="formLabel" for="email">Email:</label><br />
+<input id="email" type="email" placeholder="Ex: user@website.com" name="email" maxlength="30" pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z]+" required>
+<span id="email-message" class="message"></span>
+</div>
+<div id="phone-field" class="form-right form-field">
+<label class="formLabel" for="phone">Phone:</label><br />
+<input id="phone"  placeholder="Ex: 555-555-5555" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="12"/>
+<span id="phone-message" class="message"></span>
+</div>
+<div id="desc-field" class="form-full">
+<label class="formLabel" for="description">Description:</label><br />
+<textarea id="description" placeholder="Please describe your project in 500 characters or less." type="text" rows="30" name="description" maxlength="500" required></textarea>
+<span id="desc-message" class="message"></span>
+</div>
+<input style="flex-basis:185px;height:20px;margin-right:10px;display:none;" type="text" id="service" name="service" value="System Administration" /><br />
+</form>
+<a id="sysadminsubmit2" onclick="request()" class="submit-button">Submit</a>
+<div id="dialog-message" style="display:none;"></div>
+</div>
+<div id="confirmPanel">
+<h3 id="lgConfirmTitle" class="lgConfirmTitle">Thanks for your request!</h3>
+<div id="confirmation" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+<p id="confirmationPara" class="desc" style="flex-basis:100%;color:black;">Review the details of your <span id="confirmService" style="color:black;"></span> request below.</p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">First Name: <span id="confirmFirst" class="confirm-value" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Last Name: <span id="confirmLast" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Email: <span id="confirmEmail" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Phone: <span id="confirmPhone" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:#8F37FA;">Description: <span id="confirmDesc" style="color:black;"></span></p>
+<p class="confirmationPara" style="flex-basis:100%;color:black;">You will receive a confirmation email for your request shortly. Have a great day!</p>
+<p class="confirmationPara" style="flex-basis:100%;margin-top:10px;"><a href="/" id="backtohome" class="submit-button">Back to Home</a></p>
+</div>
+</div>
