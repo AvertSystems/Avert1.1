@@ -1,0 +1,1038 @@
+.storefront-sorting-2 {
+  font-size: 0.875em;margin-bottom: 2.617924em;
+}
+@media (min-width: 768px) {
+  .storefront-sorting-2 {
+    margin-bottom: 2.617924em;
+  }
+  .storefront-sorting-2::before,
+  .storefront-sorting-2::after {
+    content: "";display: table;
+  }
+  .storefront-sorting-2::after {
+    clear: both;
+  }
+  .storefront-sorting-2 select {
+    width: auto;
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 499px) {
+  #carousel,
+  #cat-banner {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 300px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .storefront-sorting,
+  .storefront-sorting-2 {
+    margin: 50px auto 0px;
+    width: 200px;
+    text-align: center;
+  }
+  .cat-header {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #sale-loop .product {
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  #footer-nav .navLinks {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 600px) {
+  #carousel,
+  #cat-banner {
+    height: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 300px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .storefront-sorting,
+  .storefront-sorting-2 {
+    margin: 50px auto 0px;
+    width: 200px;
+    text-align: center;
+  }
+  .cat-header {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #sale-loop .product {
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  #footer-nav .navLinks {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid black;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  #carousel,
+  #cat-banner {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 350px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  #banner {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .storefront-sorting,
+  .storefront-sorting-2 {
+    margin: 50px auto 0px;
+    width: 200px;
+    text-align: center;
+  }
+  .cat-header {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 768px) {
+  #carousel,
+  #cat-banner {
+    height: 350px;
+    width: 100%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 350px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .storefront-sorting,
+  .storefront-sorting-2 {
+    margin: 50px auto 0px;
+    width: 200px;
+    text-align: center;
+  }
+  .cat-header {
+    width: 100%;
+    height: 40px;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #sale-loop .product {
+    flex-basis: 100%;
+    margin-right: 0px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: auto;
+    width: 200px;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+  }
+  #footer-nav .navLinks {
+    width: 100%;
+    text-align: center;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #carousel,
+  #cat-banner {
+    height: 500px;
+    width: 100%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 500px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 93%;
+  }
+  #sale-loop .product {
+    flex-basis: 21%;
+    margin-right: 50px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  #footer-nav .navLinks {
+    margin-right: 40px;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1300px) {
+  #carousel,
+  #cat-banner {
+    height: 600px;
+    width: 90%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 600px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+  }
+  #sale-loop .product {
+    flex-basis: 21%;
+    margin-right: 50px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  #footer-nav .navLinks {
+    margin-right: 40px;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1300px) {
+  #carousel,
+  #cat-banner {
+    height: 600px;
+    width: 80%;
+    margin: auto;
+  }
+  .fullImg,
+  .catImg {
+    height: 600px;
+    width: 100%;
+    display: none;
+  }
+  li.product a.woocommerce-LoopProduct-link .onsale,
+  li#sale-loop .product a.woocommerce-LoopProduct-link .onsale {
+    background-color: red;
+    color: white;
+  }
+  li.sale span.price,
+  li.sale a.button.add_to_cart_button {
+    position: relative;
+    top: 0px;
+  }
+  .wp-block-woocommerce-empty-cart-block ul li .wc-block-grid__product-onsale {
+    margin: auto;
+    color: white !important;
+    background-color: red !important;
+    border: 1px solid black !important;
+  }
+  #banner {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+  #banner #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  #banner #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  #banner #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  #banner #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header {
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  .cat-header #banner1 {
+    width: 1000px;
+    position: absolute;
+    right: -500px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+  }
+  .cat-header #banner1 .addSpace {
+    margin-right: 300px;
+  }
+  .cat-header #banner2 {
+    width: 1000px;
+    position: absolute;
+    right: -1000px;
+    animation-name: showBanner;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6.5s;
+  }
+  .cat-header #banner2 .addSpace {
+    margin-right: 300px;
+  }
+  #sale-loop {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 73%;
+  }
+  #sale-loop .product {
+    flex-basis: 21%;
+    margin-right: 50px;
+  }
+  #sale-loop .storefront-sorting-2 {
+    margin: 0px 0px 25px 0px;
+    width: 100%;
+    text-align: center;
+  }
+  #sale-loop li:not(.sale) {
+    display: none;
+  }
+  #footer-nav {
+    position: relative;
+    bottom: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  #footer-nav .navLinks {
+    margin-right: 40px;
+  }
+  #footer-nav .navLinks:link {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:visited {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:hover {
+    text-decoration: none;
+  }
+  #footer-nav .navLinks:active {
+    text-decoration: none;
+  }
+}
+#carousel,
+#cat-banner {
+  margin-bottom: 100px;
+}
+#carousel .fullImg,
+#carousel .catImg,
+#cat-banner .fullImg {
+  margin-bottom: 50px;
+}
+@keyframes showBanner {
+  from {
+    right: -1100px;
+  }
+  to {
+    right: 1100px;
+  }
+}
+#banner-link:hover #banner1,
+#banner-link:hover #banner2 {
+  animation-play-state: paused;
+}
+li.product .price,
+li.product a[role="button"],
+li.product .added_to_cart {
+  position: relative;
+  top: 40px;
+}
+.cat-loop-title {
+  width: 100%;
+  text-align: center;
+}
+.custom-cat-title {
+  margin-bottom: 25px;
+}
+.storefront-sorting-2 {
+  margin-bottom: 20px;
+}
+.storefront-sorting-2 p.woocommerce-result-count {
+  display: none;
+}
+h1.woocommerce-products-header__title {
+  display: none;
+}
+.wc-block-components-sale-badge,
+.onsale {
+  color: white !important;
+  background-color: red !important;
+  border: 1px solid black !important;
+}

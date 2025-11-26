@@ -1,0 +1,374 @@
+@import (less, reference) "/var/www/shop/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css";
+
+.productsMixin(@basis: 21%, @width: 80%, @flex: flex, @flexDir: row, @flexWrap: wrap, @margin: auto, @sMargin: 0px 0px 25px 0px, @sWidth: 100%, @pMargin: 50px) {
+	&:extend(.products all);
+	margin: @margin;
+	display: @flex;
+	#flexLib.flow(@flexDir, @flexWrap);
+	justify-content: flex-start;
+	#flexLib.width(@width);
+	.product {
+		&:extend(.product all);
+		#flexLib.basis(@basis);
+		margin-right: @pMargin;
+	}
+	.storefront-sorting-2 {
+		#flexLib.sMargin(@sMargin, @sWidth);
+		text-align: center;
+	}	
+}
+.bannerMixin(@height: 50px, @bgColor: red, @fontSize: 30px, @mRight2: 300px, @rPos: -1000px) {
+	 width:100%;
+	 height: @height;
+	 font-weight: bold;
+	 font-size: @fontSize;
+	 background-color: @bgColor;
+	 color: white;
+	 text-align: center;	
+	#banner1 {
+		.slideBanner();
+	}
+	#banner2 {
+		.slideBanner(@delay: 6.5s, @right: @rPos, @mRight: @mRight2);
+	}
+}
+.slideBanner(@width: 1000px, @delay: 0s, @right: -500px, @mRight: 300px) {
+        width: @width;
+        position: absolute;
+        right: @right;
+	.addSpace {
+		margin-right: @mRight;
+	}
+        animation-name: showBanner;
+        animation-duration: 13s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+	animation-delay: @delay;
+}
+#flexLib {
+	.basis(@basis: 100%) {
+		flex-basis: @basis;
+	}
+	.flow(@flexDir: row, @flexWrap: wrap) {
+		flex-direction: @flexDir;
+		flex-wrap: @flexWrap;
+	}
+	.height(@height) {
+		height: @height;
+	}
+	.width(@width) {
+		width: @width;
+	}
+	.sMargin(@margin, @width) {
+		margin: @margin;
+		width: @width;
+	}
+}
+.footerMixin(@bottom: 20px, @flex: flex, @flexDir: row) {
+	position: relative;
+	bottom: @bottom;
+	display: @flex;
+	flex-direction: @flexDir;
+}
+.linkMixin(@decor: none) {
+	&:link {
+		text-decoration: @decor;
+	}
+	&:visited {
+		text-decoration: @decor;
+	}
+	&:hover {
+		text-decoration: @decor;
+	}
+	&:active {
+		text-decoration: @decor;
+	}
+}
+.mediaMixin(@height, @width: 100%, @right) {
+	#carousel {
+		height: @height;
+		width: @width;
+		margin: auto;
+	}	
+	.fullImg {
+		height: @height;
+		width: 100%;
+		display: none;
+	}
+	li.product a.woocommerce-LoopProduct-link .onsale {
+	        background-color: red;
+	        color: white;
+	}
+	li.sale {
+		span.price, a.button.add_to_cart_button {
+			position: relative;
+			top: 0px;	
+		}
+	}
+}
+.sale-empty(@margin: auto) {
+	margin: @margin;
+	color: white !important;
+	background-color: red !important;
+	border: 1px solid black !important;
+}
+
+@media screen {
+	@media (min-width: 400px) and (max-width: 499px) {
+		.mediaMixin(@height: 300px, @right: 44%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin(@height: 40px, @fontSize: 22px);
+		}
+		.storefront-sorting {
+			#flexLib.sMargin(50px auto 0px, 200px);
+			text-align: center;
+		}
+		.cat-header {
+			.bannerMixin(@height: 40px, @bgColor: black, @fontSize: 22px)
+		}
+		#sale-loop {
+			.productsMixin(@basis: 100%, @width: 100%, @flexDir: column, @margin: none, @sMargin: auto, @sWidth: 200px, @pMargin: 0px);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin(@flexDir: column);
+			#flexLib.basis();
+			.navLinks {
+				width: 100%;
+				text-align: center;
+				.linkMixin();
+				border-bottom: 2px solid black;
+			}
+		}
+	}
+	@media (min-width: 500px) and (max-width: 600px) {
+		.mediaMixin(@height: 300px, @right: 45%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin(@height: 40px, @fontSize: 22px);
+		}
+		.storefront-sorting {
+			#flexLib.sMargin(50px auto 0px, 200px);
+			text-align: center;
+		}
+		.cat-header {
+			.bannerMixin(@height: 40px, @bgColor: black, @fontSize: 22px)
+		}
+		#sale-loop {
+			.productsMixin(@basis: 100%, @width: 100%, @flexDir: column, @margin: none, @sMargin: auto, @sWidth: 200px, @pMargin: 0px);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin(@flexDir: column);
+			#flexLib.basis();
+			.navLinks {
+				width: 100%;
+				text-align: center;
+				.linkMixin();
+				border-bottom: 2px solid black;
+			}
+		}
+	}
+	@media (min-width: 601px) and (max-width: 700px) {
+                .mediaMixin(@height: 350px, @right: 45%);
+		 #banner {
+                         .bannerMixin(@height: 40px, @fontSize: 22px);
+                 }
+                 .storefront-sorting {
+                         #flexLib.sMargin(50px auto 0px, 200px);
+                         text-align: center;
+                 }
+                 .cat-header {
+                         .bannerMixin(@height: 40px, @bgColor: black, @fontSize: 22px);
+                 }
+	}
+	@media (min-width: 651px) and (max-width: 768px) {
+		.mediaMixin(@height: 350px, @right: 46%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin(@height: 40px, @fontSize: 22px);
+		}
+		.storefront-sorting {
+			#flexLib.sMargin(50px auto 0px, 200px);
+			text-align: center;
+		}
+		.cat-header {
+			.bannerMixin(@height: 40px, @bgColor: black, @fontSize: 22px);
+		}
+		#sale-loop {
+			.productsMixin(@basis: 100%, @width: 100%, @flexDir: column, @margin: none, @sMargin: auto, @sWidth: 200px, @pMargin: 0px);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin();
+			#flexLib.basis();
+			.navLinks {
+				width: 100%;
+				text-align: center;
+				.linkMixin();
+			}
+		}
+	}
+	@media (min-width: 769px) and (max-width: 992px) {
+		.mediaMixin(@height: 500px, @right: 37%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin();
+		}
+		.cat-header {
+			.bannerMixin(@bgColor: black);
+		}
+		#sale-loop {
+			.productsMixin(@width: 93%);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin();
+			.navLinks {
+				margin-right: 40px;
+				.linkMixin();
+			}
+		}
+	}
+	@media (min-width: 993px) and (max-width: 1300px) {
+		.mediaMixin(600px, 90%, 39%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin();
+		}
+		.cat-header {
+			.bannerMixin(@bgColor: black);
+		}
+		#sale-loop {
+			.productsMixin(@width: 90%);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin();
+			.navLinks {
+				margin-right: 40px;
+				.linkMixin();
+			}
+		}	
+	}
+	@media (min-width: 1300px) {
+		.mediaMixin(600px, 80%, 40%);
+		.wp-block-woocommerce-empty-cart-block {
+			ul li { 
+				.wc-block-grid__product-onsale {
+					.sale-empty();
+				}
+			}
+		}
+		#banner {
+			.bannerMixin();
+		}
+		.cat-header {
+			.bannerMixin(@bgColor: black);
+		}
+		#sale-loop {
+			.productsMixin(@width: 73%);
+			li:not(.sale) {
+				display: none;
+			}
+		}
+		#footer-nav {
+			.footerMixin();
+			.navLinks {
+				margin-right: 40px;
+				.linkMixin();
+			}
+		}	
+	}
+}
+
+#carousel {
+	margin-bottom: 100px;
+	.fullImg {
+		margin-bottom: 50px;
+	}
+}
+@keyframes showBanner {
+        from {right: -1100px;}
+        to {right: 1100px;}
+}
+#banner-link {
+	&:hover {
+		#banner1, #banner2 {
+			animation-play-state: paused;
+		}	
+	}
+}
+li.product .price, li.product a[role="button"], li.product .added_to_cart {
+        position: relative;
+        top: 40px;
+}
+.catImg {
+	&:extend(.fullImg all);
+}
+#cat-banner {
+	&:extend(#carousel all);
+}
+.cat-loop-title {
+	width: 100%;
+	text-align: center;
+}
+.custom-cat-title {
+	margin-bottom: 25px;
+}
+.storefront-sorting-2 {
+	margin-bottom: 20px;
+	&:extend(.storefront-sorting all);
+	p.woocommerce-result-count {
+		display: none;
+	}
+}
+h1.woocommerce-products-header__title {
+	display: none;
+}
+.wc-block-components-sale-badge, .onsale {
+	color: white !important;
+	background-color: red !important;
+	border: 1px solid black !important;
+}
