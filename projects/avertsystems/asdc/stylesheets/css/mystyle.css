@@ -1,0 +1,516 @@
+/*** My Custom Styles ***/
+@media screen and (max-width: 600px) {
+  #main > .ct-container-full {
+    font-size: 14px;
+    width: 100%;
+    margin-top: none;
+    margin-bottom: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid #8F37FA 4px;
+    border-radius: 0px;
+    background-color: white;
+  }
+  #main > .ct-container-full h1,
+  #main > .ct-container-full h2 {
+    font-size: 20px;
+  }
+  #main > .ct-container-full .hero-section {
+    margin-left: 0px;
+  }
+  #main > .ct-container-full .submit-button {
+    font-size: 14px;
+    padding: 20px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #mainPanel .service-info,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info {
+    position: relative;
+    bottom: 0px;
+  }
+  #main > .ct-container-full #mainPanel form,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+  }
+  #main > .ct-container-full #mainPanel form .form-field,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field {
+    flex-basis: 100%;
+    font-size: 14px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field label,
+  #main > .ct-container-full #mainPanel form .form-field input,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field input {
+    font-size: 14px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field .message,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field .message {
+    font-size: 12px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full {
+    flex-basis: 100%;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full label,
+  #main > .ct-container-full #mainPanel form .form-full textarea,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full textarea {
+    resize: none;
+    font-size: 14px;
+  }
+  #main > .ct-container-full #mainPanel .submit-button,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 14px;
+    padding: 11px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #confirmPanel .lgConfirmTitle {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 45px;
+    font-size: 16px;
+  }
+  #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 14px;
+    padding: 11px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #footer [data-row="middle"] #footer-menu {
+    padding-top: 15px !important;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 767px) {
+  #main > .ct-container-full {
+    font-size: 16px;
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: solid #8F37FA 4px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  #main > .ct-container-full h1,
+  #main > .ct-container-full h2 {
+    font-size: 25px;
+  }
+  #main > .ct-container-full .submit-button {
+    font-size: 16px;
+    padding: 20px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #mainPanel .service-info,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info {
+    position: relative;
+    bottom: 0px;
+  }
+  #main > .ct-container-full #mainPanel form,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+  }
+  #main > .ct-container-full #mainPanel form .form-field,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field {
+    flex-basis: 100%;
+    font-size: 16px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field label,
+  #main > .ct-container-full #mainPanel form .form-field input,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field input {
+    font-size: 16px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field .message,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field .message {
+    font-size: 14px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full {
+    flex-basis: 100%;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full label,
+  #main > .ct-container-full #mainPanel form .form-full textarea,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full textarea {
+    resize: none;
+    font-size: 16px;
+  }
+  #main > .ct-container-full #mainPanel .submit-button,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #confirmPanel .lgConfirmTitle {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 45px;
+    font-size: 19px;
+  }
+  #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #footer [data-row="middle"] {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #main > .ct-container-full {
+    font-size: 19px;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #8F37FA 4px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  #main > .ct-container-full h1,
+  #main > .ct-container-full h2 {
+    font-size: 29px;
+  }
+  #main > .ct-container-full .submit-button {
+    font-size: 19px;
+    padding: 20px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #mainPanel .service-info,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info {
+    position: relative;
+    bottom: 0px;
+  }
+  #main > .ct-container-full #mainPanel form,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+  }
+  #main > .ct-container-full #mainPanel form .form-field,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field {
+    flex-basis: 40%;
+    font-size: 19px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field label,
+  #main > .ct-container-full #mainPanel form .form-field input,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field input {
+    font-size: 19px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field .message,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field .message {
+    font-size: 14px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full {
+    flex-basis: 100%;
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full label,
+  #main > .ct-container-full #mainPanel form .form-full textarea,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full textarea {
+    resize: none;
+    font-size: 19px;
+  }
+  #main > .ct-container-full #mainPanel .submit-button,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 19px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #confirmPanel .lgConfirmTitle {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 45px;
+    font-size: 22px;
+  }
+  #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 19px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #footer [data-row="middle"] {
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #main > .ct-container-full {
+    font-size: 20px;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #8F37FA 4px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  #main > .ct-container-full h1,
+  #main > .ct-container-full h2 {
+    font-size: 35px;
+  }
+  #main > .ct-container-full .submit-button {
+    font-size: 20px;
+    padding: 20px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #mainPanel .service-info,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info {
+    position: relative;
+    bottom: 0px;
+  }
+  #main > .ct-container-full #mainPanel form,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+  }
+  #main > .ct-container-full #mainPanel form .form-field,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field {
+    flex-basis: 40%;
+    font-size: 20px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field label,
+  #main > .ct-container-full #mainPanel form .form-field input,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field input {
+    font-size: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field .message,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field .message {
+    font-size: 15px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full {
+    flex-basis: 100%;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full label,
+  #main > .ct-container-full #mainPanel form .form-full textarea,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full textarea {
+    resize: none;
+    font-size: 20px;
+  }
+  #main > .ct-container-full #mainPanel .submit-button,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 20px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #confirmPanel .lgConfirmTitle {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 20px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #footer [data-row="middle"] {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #main > .ct-container-full {
+    font-size: 21px;
+    width: 70%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid #8F37FA 4px;
+    border-radius: 20px;
+    background-color: white;
+  }
+  #main > .ct-container-full h1,
+  #main > .ct-container-full h2 {
+    font-size: 35px;
+  }
+  #main > .ct-container-full .submit-button {
+    font-size: 23px;
+    padding: 20px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #mainPanel .service-info,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info {
+    position: relative;
+    bottom: 0px;
+  }
+  #main > .ct-container-full #mainPanel form,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    color: black;
+  }
+  #main > .ct-container-full #mainPanel form .form-field,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field {
+    flex-basis: 40%;
+    font-size: 21px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field label,
+  #main > .ct-container-full #mainPanel form .form-field input,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field input {
+    font-size: 21px;
+  }
+  #main > .ct-container-full #mainPanel form .form-field .message,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-field .message {
+    font-size: 16px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full {
+    flex-basis: 100%;
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  #main > .ct-container-full #mainPanel form .form-full label,
+  #main > .ct-container-full #mainPanel form .form-full textarea,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full label,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel form .form-full textarea {
+    resize: none;
+    font-size: 21px;
+  }
+  #main > .ct-container-full #mainPanel .submit-button,
+  #main > .ct-container-full #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 23px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #main > .ct-container-full #confirmPanel .lgConfirmTitle {
+    width: 100%;
+    margin-top: 36px;
+    margin-bottom: 45px;
+    font-size: 28px;
+  }
+  #main > .ct-container-full #confirmPanel .submit-button {
+    font-size: 23px;
+    padding: 12px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+  }
+  #footer [data-row="middle"] {
+    display: none;
+  }
+}
+body {
+  background-image: url("https://www.avertsystems.co/wp-content/uploads/2025/11/Banner-Software-Product-Development-Lifecycle.jpg");
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-position: 70% 0;
+}
+#header {
+  background-color: black;
+  color: white;
+  border-bottom: solid #8F37FA 3px;
+}
+#header .ct-containter {
+  background-color: black;
+}
+#header [data-row="middle"] > div {
+  min-height: 80px !important;
+}
+#main > .ct-container-full #post-8 {
+  position: relative;
+  bottom: 20px;
+}
+#main > .ct-container-full .hero-section {
+  margin-bottom: 10px;
+}
+#main > .ct-container-full #mainPanel,
+#main > .ct-container-full #main > .ct-container-full #confirmPanel {
+  width: 100%;
+}
+#main > .ct-container-full #mainPanel .service-info > .viewDesc,
+#main > .ct-container-full #main > .ct-container-full #confirmPanel .service-info > .viewDesc {
+  color: #8F37FA;
+  cursor: pointer;
+}
+#main > .ct-container-full #confirmPanel {
+  display: none;
+}
+.submit-button {
+  color: white;
+  background-color: #8F37FA;
+}
+.submit-button .submit-button {
+  font-size: 23px;
+  padding: 20px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+.submit-button:link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.submit-button:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+.submit-button:hover {
+  text-decoration: none;
+  color: white;
+  background-color: #772bd5;
+  cursor: pointer;
+}
+.submit-button:active {
+  text-decoration: none;
+  cursor: pointer;
+}
+#footer {
+  border-top: solid #8F37FA 3px;
+}

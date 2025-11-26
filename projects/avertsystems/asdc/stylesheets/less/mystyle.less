@@ -1,0 +1,258 @@
+/*** My Custom Styles ***/
+.main-ct-full(@fontSize: 24px, @width: 70%, @mtb: 100px, @plr: 30px, @radius: 20px ) {
+	font-size: @fontSize;
+	width: @width;
+	margin-top: @mtb;
+	margin-bottom: @mtb;
+	padding-left: @plr;
+	padding-right: @plr;
+	border: solid #8F37FA 4px;
+	border-radius: @radius;
+	background-color: white;
+}
+.form-mixin(@basis: 40%, @mTop: 15px, @mRight: 15px, @mBottom: 15px, @pBottom: 10px, @fontSize: 24px, @msgFont: 5) {
+	.service-info {
+		position: relative;
+		bottom: @pBottom;
+	}
+	form {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between; 
+		flex-wrap: wrap;
+		margin-top: @mTop;
+		color: black;
+		.form-field {
+			flex-basis: @basis;
+			font-size: @fontSize;
+			margin-right: @mRight;
+			margin-bottom: @mBottom;
+			label, input {
+				font-size: @fontSize;
+			}
+			.message {
+				font-size: @fontSize - @msgFont;
+			}
+		}
+		.form-full {
+			flex-basis: 100%;
+			font-size: @fontSize;
+			margin-bottom: @mBottom;
+			label, textarea { 
+				resize: none; 
+				font-size: @fontSize;
+			}
+		}
+	}
+}
+.submit-btn-mixin(@fontSize: 23px, @padding: 20px) {
+	.submit-button {
+		font-size: @fontSize;
+		padding: @padding;
+		border-radius: 7px;
+		text-decoration: none;
+	}	
+}
+@media screen {
+	@media (max-width: 600px) {
+		#main > .ct-container-full {
+			h1, h2 {
+				font-size: 20px;
+			}
+			.hero-section { margin-left: 0px; }
+			.main-ct-full(@fontSize: 14px, @width: 100%, @mtb: none, @plr: 10px, @radius: 0px);
+			.submit-btn-mixin(@fontSize: 14px, @padding: 20px 15px);
+			#mainPanel {
+				.form-mixin(@basis: 100%, @mRight: 0px, @mBottom: 20px, @pBottom: 0px, @fontSize: 14px, @msgFont: 2);
+				.submit-btn-mixin(@fontSize: 14px, @padding: 11px 15px);
+			}
+			#confirmPanel {
+				.lgConfirmTitle {
+					width: 100%;
+					margin-top: 36px;
+					margin-bottom: 45px;
+					font-size: 16px;
+				}
+				.submit-btn-mixin(@fontSize: 14px, @padding: 11px 15px);
+			}
+			#footer {
+				[data-row="middle"] {
+					#footer-menu {
+						padding-top: 15px !important;
+					}
+				}
+			}
+		}
+	}
+	@media (min-width: 601px) and (max-width: 767px) {
+		#main > .ct-container-full {
+			h1, h2 {
+				font-size: 25px;
+			}
+			.main-ct-full(@fontSize: 16px, @width: 90%, @mtb: 50px, @plr: 20px, @radius: 20px);
+			.submit-btn-mixin(@fontSize: 16px, @padding: 20px 16px);
+			#mainPanel {
+				.form-mixin(@basis: 100%, @mRight: 0px, @mBottom: 20px, @pBottom: 0px, @fontSize: 16px, @msgFont: 2);
+				.submit-btn-mixin(@fontSize: 16px, @padding: 12px 16px);
+			}
+			#confirmPanel {
+				.lgConfirmTitle {
+					width: 100%;
+					margin-top: 36px;
+					margin-bottom: 45px;
+					font-size: 19px;
+				}
+				.submit-btn-mixin(@fontSize: 16px, @padding: 12px 16px);
+			}
+		}
+		#footer {
+			[data-row="middle"] {
+				display: none;
+			}
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991px) {
+		#main > .ct-container-full {
+			h1, h2 {
+				font-size: 29px;
+			}
+			.main-ct-full(@fontSize: 19px, @width: 70%, @mtb: 100px, @plr: 30px, @radius: 20px);
+			.submit-btn-mixin(@fontSize: 19px, @padding: 20px 16px);
+			#mainPanel {
+				.form-mixin(@basis: 40%, @mRight: 15px, @mBottom: 20px, @pBottom: 0px, @fontSize: 19px);
+				.submit-btn-mixin(@fontSize: 19px, @padding: 12px 16px);
+			}
+			#confirmPanel {
+				.lgConfirmTitle {
+					width: 100%;
+					margin-top: 36px;
+					margin-bottom: 45px;
+					font-size: 22px;
+				}
+				.submit-btn-mixin(@fontSize: 19px, @padding: 12px 16px);
+			}
+		}
+		#footer {
+			[data-row="middle"] {
+				display: none;
+			}
+		}
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		#main > .ct-container-full {
+			h1, h2 {
+				font-size: 35px;
+			}
+			.main-ct-full(@fontSize: 20px, @width: 70%, @mtb: 100px, @plr: 30px, @radius: 20px);
+			.submit-btn-mixin(@fontSize: 20px, @padding: 20px 16px);
+			#mainPanel {
+				.form-mixin(@basis: 40%, @mRight: 15px, @mBottom: 20px, @pBottom: 0px, @fontSize: 20px);
+				.submit-btn-mixin(@fontSize: 20px, @padding: 12px 16px);
+			}
+			#confirmPanel {
+				.lgConfirmTitle {
+					width: 100%;
+					margin-top: 36px;
+					margin-bottom: 45px;
+					font-size: 28px;
+				}
+				.submit-btn-mixin(@fontSize: 20px, @padding: 12px 16px);
+			}
+		}
+		#footer {
+			[data-row="middle"] {
+				display: none;
+			}
+		}
+	}
+	@media (min-width: 1200px) {
+		#main > .ct-container-full {
+			h1, h2 {
+				font-size: 35px;
+			}
+			.main-ct-full(@fontSize: 21px, @width: 70%, @mtb: 100px, @plr: 30px, @radius: 20px);
+			.submit-btn-mixin(@fontSize: 23px, @padding: 20px 16px);
+			#mainPanel {
+				.form-mixin(@basis: 40%, @mRight: 15px, @mBottom: 20px, @pBottom: 0px, @fontSize: 21px);
+				.submit-btn-mixin(@fontSize: 23px, @padding: 12px 16px);
+			}
+			#confirmPanel {
+				.lgConfirmTitle {
+					width: 100%;
+					margin-top: 36px;
+					margin-bottom: 45px;
+					font-size: 28px;
+				}
+				.submit-btn-mixin(@fontSize: 23px, @padding: 12px 16px);
+			}
+		}	
+		#footer {
+			[data-row="middle"] {
+				display: none;
+			}
+		}
+	}
+}
+body {
+	background-image: url("https://www.avertsystems.co/wp-content/uploads/2025/11/Banner-Software-Product-Development-Lifecycle.jpg");
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+	background-position: 70% 0;
+}
+#header {
+	background-color: black;
+	color: white;
+	border-bottom: solid #8F37FA 3px;
+	.ct-containter {
+		background-color: black;
+	}
+	[data-row="middle"] > div {
+		min-height: 80px !important;
+	}
+}
+#main > .ct-container-full {
+	#post-8 {
+		position: relative;
+		bottom: 20px;
+	}
+	.hero-section {
+		margin-bottom: 10px;
+	}
+	#mainPanel {
+		width: 100%;
+		.service-info > .viewDesc {
+			color: #8F37FA;
+			cursor: pointer;
+		}
+	}
+	#confirmPanel {
+		&:extend(#mainPanel all);
+		display: none;
+	}
+}
+.submit-button {
+	.submit-btn-mixin();
+	color: white;
+	background-color: #8F37FA;
+	&:link {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:visited {
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:hover {
+		text-decoration: none;
+		color: white;
+		background-color: #772bd5;
+		cursor: pointer;
+	}
+	&:active {
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+#footer {
+	border-top: solid #8F37FA 3px;
+}
