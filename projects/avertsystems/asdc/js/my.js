@@ -1,9 +1,22 @@
 /*** My Custom Javascript ***/
 $(document).ready(function() {
+	var vpw = $( window ).width();
 	var pathname = window.location.pathname;
 	if ( pathname == "/" ) {
 		$("h1.page-title").hide();
 		$(".entry-content > figure > figcaption").hide();
+	}
+	if ( pathname == "/portfolio" || pathname == "/portfolio/" ) {
+		$( window ).on("resize", function() {
+			var lMargin = $("#post-24 .hero-section").css("margin-left");
+			$("a.portfolio-submit-button").css("position","relative");
+			$("a.portfolio-submit-button").css("left",lMargin);
+		});
+		$( window ).on("load", function() {
+			var lMargin = $("#post-24 .hero-section").css("margin-left");
+			$("a.portfolio-submit-button").css("position","relative");
+			$("a.portfolio-submit-button").css("left",lMargin);
+		});
 	}
 	$("#firstName").on("blur", function() {
 		var firstName = $("#firstName").val();
@@ -134,7 +147,7 @@ function request() {
             }
           }
         }
-        xhttp.open("POST", "../requests.php");
+        xhttp.open("POST", "requests.php");
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("inputs=" + firstName + "|" + lastName + "|" + email + "|" + phone + "|" + description + "|" + service);
 }

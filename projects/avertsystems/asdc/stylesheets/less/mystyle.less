@@ -45,9 +45,11 @@
 		}
 	}
 }
-.submit-btn-mixin(@fontSize: 23px, @padding: 20px) {
+.submit-btn-mixin(@fontSize: 23px, @padding: 20px, @position: relative, @left: 0px) {
 	.submit-button {
 		font-size: @fontSize;
+		position: @position;
+		left: @left;
 		padding: @padding;
 		border-radius: 7px;
 		text-decoration: none;
